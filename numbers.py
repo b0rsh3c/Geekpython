@@ -1,10 +1,10 @@
-n = input("Введите трехзначное число: ")
-n = int(n)
- 
-d1 = n % 10
-n = n // 10
-d2 = n % 10
-n = n // 10
-d3 = n % 10
- 
-print("Сумма цифр числа:", d1 + d2 + d3)
+print("vvedi chislo n")
+n = str(input())
+number1 = n 
+number2 = n + n
+number3 = n + n + n
+#print(number1)
+#print(number2)
+#print(number3)
+result = int(number1) + int(number2) + int(number3)
+print("n+nn+nnn = ", result)
