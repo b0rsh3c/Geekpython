@@ -1,5 +1,0 @@
-time = int(input())
-hours = str(n // 3600)
-minutes = str((n // 60) % 60)
-seconds = str(n % 60)
-print(hours + ':' + minutes + ':' + seconds)
