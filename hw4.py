@@ -1,12 +1,16 @@
-words = input("Введи слова через пробел: ").split()
-#words.split()  - я объединил две строки в одну
-# можно сократить решение до двух строк
-"""
-for word in input("Введи слова через пробел: ").split():
-    print(word)
+from random import random
 
-"""
-print()
-print("Cлова в столбец: ")
-for word in words:
-    print(word)
+N = 10
+arr = [0] * N
+
+for i in range(N):
+    arr[i] = int(random() * 50)
+print(arr)
+
+for i in range(N-1):
+    for j in range(i+1,N):
+        if arr[i] == arr[j]:
+            print("Есть одинаковые")
+            print(arr[i])
+            quit()
+print("Все элементы уникальны")

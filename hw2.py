@@ -1,4 +1,7 @@
-elem = [int(i) for i in input("Введи числа через пробел: ").split()]
-for i in range(0, len(elem) - 1, 2):
-    elem[i], elem[i+1] = elem[i+1], elem[i]
-print(elem)
+#генерация нужна была через рандом?
+list = []
+for j in range(1, 20):
+    list.append(j)
+for i in range(1, len(list)):
+    if list[i] > list[i-1]:
+        print(list[i])

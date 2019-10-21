@@ -1,5 +1,9 @@
-number = int(input("Введи число: "))
-my_list = [7, 5, 3, 3, 2]
-my_list.append(number)
-my_list.sort(reverse = True)
-print(my_list)
+from functools import reduce
+
+list = [i for i in range(100,1001,2)]
+
+#print(list)
+
+result = reduce(lambda x,y: x * y, list)
+
+print(result)
